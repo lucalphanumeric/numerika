@@ -1,0 +1,29 @@
+﻿<!--
+
+  HTML file to insert on a given page to interact with the bot
+
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://cdn.botframework.com/botframework-webchat/latest/botchat.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="bot"/>
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/botchat.js"></script>
+    <script>
+      const speechOptions = {
+         speechRecognizer: new BotChat.Speech.BrowserSpeechRecognizer(),
+         speechSynthesizer: new BotChat.Speech.BrowserSpeechSynthesizer()
+      };
+      BotChat.App({
+        directLine: { secret: 'MXuntluFRng.cwA.3Cw.CXL9x0XRXsl1bcQml7xlL_EtpVdRlaOR2Ncd7ZtklM8' },
+        user: { id: 'You' }, //name for the visitor
+        bot: { id: 'botid' }, 
+        speechOptions: speechOptions,
+        resize: 'detect'
+      }, document.getElementById("bot"));
+    </script>
+  </body>
+</html>

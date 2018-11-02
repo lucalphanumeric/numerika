@@ -1,0 +1,65 @@
+App name 
+Numerika
+App ID 
+b8b70c07-8acb-4c1c-bdf7-5d08144d5a10
+Password
+tiswbqHPFO58222({+cZKL{
+
+-------------------------------------------
+
+How to use dotenv
+https://github.com/motdotla/dotenv
+
+
+-------------------------------------------
+
+
+https://ethereal.email
+Account created
+Here you can find all the details needed to access your new Ethereal test account. Remember that if sending messages through SMTP then no message is actually delivered, all messages are caught and you can see these in the Messages page or by using your favorite IMAP/POP3 client.
+
+Account credentials
+NB! these credentials are shown only once. If you do not write these down then you have to create a new account.
+
+Username	n342rxvwf76ind2k@ethereal.email (also works as a real inbound email address)	
+Password	Z2sJGqTuhWsV1pR6Fs	
+Nodemailer configuration
+const transporter = nodemailer.createTransport({
+    host: 'smtp.ethereal.email',
+    port: 587,
+    auth: {
+        user: 'n342rxvwf76ind2k@ethereal.email',
+        pass: 'Z2sJGqTuhWsV1pR6Fs'
+    }
+});
+PHPMailer configuration
+$mail = new PHPMailer(true);
+$mail->isSMTP();
+$mail->Host = 'smtp.ethereal.email';
+$mail->SMTPAuth = true;
+$mail->Username = 'n342rxvwf76ind2k@ethereal.email';
+$mail->Password = 'Z2sJGqTuhWsV1pR6Fs';
+$mail->SMTPSecure = 'tls';
+$mail->Port = 587;
+SwiftMailer configuration
+$transport = (new Swift_SmtpTransport('smtp.ethereal.email', 587, 'tls'))
+  ->setUsername('n342rxvwf76ind2k@ethereal.email')
+  ->setPassword('Z2sJGqTuhWsV1pR6Fs');
+SMTP configuration
+Host	smtp.ethereal.email
+Port	587
+Security	STARTTLS
+Username	n342rxvwf76ind2k@ethereal.email
+Password	Z2sJGqTuhWsV1pR6Fs
+IMAP configuration
+Host	imap.ethereal.email
+Port	993
+Security	TLS
+Username	n342rxvwf76ind2k@ethereal.email
+Password	Z2sJGqTuhWsV1pR6Fs
+POP3 configuration
+Host	pop3.ethereal.email
+Port	995
+Security	TLS
+Username	n342rxvwf76ind2k@ethereal.email
+Password	Z2sJGqTuhWsV1pR6Fs

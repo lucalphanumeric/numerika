@@ -1,0 +1,47 @@
+List of technologies used
+
+Node.JS
+https://nodejs.org/en/
+The bot is built on top of Node.js, there will be an option to use python soon.
+
+Microsoft Bot Framework
+https://dev.botframework.com/
+We use this framework to create the bot.
+
+Microsoft LUIS
+https://www.luis.ai/
+LUIS helps understand the user intent, so we can take action according to what he said.
+
+Microsoft Azure
+https://azure.microsoft.com/
+Docs: https://docs.microsoft.com/en-us/azure/bot-service/?view=azure-bot-service-4.0
+On Azure you need to register:
+- Bot Channels Registration
+- Storage Account
+The bot is not hosted on azure, we use the free version of Heroku (https://www.heroku.com) but it can be hosted anywhere. We had to use azure to register the bot on Microsoft, according to the documentation.
+The developer will need to transfer the azure subscription to someone responsible for billing.
+
+
+To run the bot use the command line and navigate to the bot project folder, after, run node app.js to run the bot, it will say "Numerika listening on port 3000!" if successful.
+
+Use Bot framework emulator to test the bot when it's running.
+
+The new developer will have to join azure with a Microsoft account and register the Bot Channels Registration and create a storage account and change the corresponded names and keys on the bot code.
+
+The bot.html is the file that contains the code to be embedded on a webpage. This is the interface to talk to the bot. There is the need to change the DirectLine secret key, this is found on the azure dashboard.
+
+For storage:
+var tableName
+var storageName
+var storageKey
+
+For the bot:
+appID
+appPassword
+
+For LUIS (if a new account is created):
+var luisAppId
+var luisAPIKey
+var luisAPIHostName (you probably won't need to change this field)
+
+I used Visual Studio Code to write the code. It has good features for running and debugging the code.

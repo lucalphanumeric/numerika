@@ -1,0 +1,30 @@
+{
+  "name": "nodebot",
+  "version": "1.0.0",
+  "description": "Node chatbot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "chatbot",
+    "bot",
+    "chat"
+  ],
+  "author": "Sandro Milhano <sandromilhano@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "botbuilder": "^3.15.0",
+    "botbuilder-azure": "^3.1.0",
+    "botbuilder-timeout": "^1.0.6",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "isemail": "^3.1.3",
+    "nodemailer": "^4.6.7"
+  },
+  "devDependencies": {
+    "eslint": "^5.3.0"
+  }
+}
