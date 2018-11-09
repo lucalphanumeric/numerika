@@ -18,7 +18,8 @@ Docs: https://docs.microsoft.com/en-us/azure/bot-service/?view=azure-bot-service
 On Azure you need to register:
 - Bot Channels Registration
 - Storage Account
-The bot is not hosted on azure, we use the free version of Heroku (https://www.heroku.com) but it can be hosted anywhere. We had to use azure to register the bot on Microsoft, according to the documentation.
+The bot is not hosted on azure, we use the free version of Heroku (https://www.heroku.com) but it can be hosted anywhere. We had to use azure to register the bot on Microsoft, 
+according to the documentation.
 The developer will need to transfer the azure subscription to someone responsible for billing.
 
 
@@ -26,9 +27,11 @@ To run the bot use the command line and navigate to the bot project folder, afte
 
 Use Bot framework emulator to test the bot when it's running.
 
-The new developer will have to join azure with a Microsoft account and register the Bot Channels Registration and create a storage account and change the corresponded names and keys on the bot code.
+The new developer will have to join azure with a Microsoft account and register the Bot Channels Registration and create a storage account and change the corresponded names and keys
+on the bot code.
 
-The bot.html is the file that contains the code to be embedded on a webpage. This is the interface to talk to the bot. There is the need to change the DirectLine secret key, this is found on the azure dashboard.
+The bot.html is the file that contains the code to be embedded on a webpage. This is the interface to talk to the bot. 
+There is the need to change the DirectLine secret key, this is found on the azure dashboard.
 
 For storage:
 var tableName
